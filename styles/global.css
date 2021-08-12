@@ -1,0 +1,7 @@
+@tailwind components;
+
+@layer components {
+  .avatar {
+    @apply rounded-full h-20 w-20 object-cover;
+  }
+}
