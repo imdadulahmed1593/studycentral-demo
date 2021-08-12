@@ -4,7 +4,7 @@ import BannerInfo from "../components/BannerInfo";
 import Header from "../components/Header";
 import Program from "../components/Program";
 
-export default function Home() {
+export default function Home({ members }) {
   return (
     <div className="">
       <Head>
@@ -18,10 +18,21 @@ export default function Home() {
         <Banner />
 
         <section className="flex justify-between max-w-screen-2xl w-full mx-auto px-10 ">
-          <BannerInfo />
+          <BannerInfo members={members} />
           <Program />
         </section>
       </main>
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const res = await fetch("https://randomuser.me/api/?results=5");
+  const members = await res.json();
+
+  return {
+    props: {
+      members,
+    },
+  };
 }

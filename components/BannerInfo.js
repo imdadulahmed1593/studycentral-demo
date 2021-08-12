@@ -2,7 +2,7 @@ import { UsersIcon } from "@heroicons/react/solid";
 import Members from "./Members";
 import ProgramManager from "./ProgramManager";
 
-const BannerInfo = () => {
+const BannerInfo = ({ members }) => {
   return (
     <div className="flex-1">
       <div className="bg-white p-10  space-y-10 ">
@@ -48,7 +48,7 @@ const BannerInfo = () => {
 
       <div className="flex justify-between my-5">
         <ProgramManager />
-        <Members />
+        <Members members={members} />
       </div>
     </div>
   );
