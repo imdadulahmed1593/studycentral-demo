@@ -2,7 +2,7 @@ import { MenuAlt2Icon } from "@heroicons/react/solid";
 
 const Program = () => {
   return (
-    <div className="-mt-20 rounded-lg flex-none bg-white p-5 ml-5 mr-10">
+    <div className="lg:-mt-20 rounded-lg flex-none bg-white p-5 lg:ml-5 lg:mr-10">
       <div className="flex justify-between items-center mb-5">
         <h1 className="text-2xl font-bold mr-16">Program To-Do's</h1>
         <div className="flex items-center">

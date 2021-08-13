@@ -1,18 +1,21 @@
 const Members = ({ members }) => {
   return (
-    <div className="bg-white flex-grow rounded-lg p-10 space-y-10">
+    <div className="bg-white flex-grow rounded-lg p-10 space-y-10 overflow-auto">
       <h1 className="text-2xl font-bold">Members</h1>
-      <div className="flex items-center space-x-5">
+      <div className="flex flex-wrap items-center">
         {members.results.map((member) => (
           <div
             key={member.name.first}
-            className="flex flex-col items-center space-y-3 font-semibold text-xl"
+            className="flex flex-col items-center space-y-3 font-semibold text-xl mr-5 mt-5 md:mt-0"
           >
-            <img
-              className="avatar"
-              src={member.picture.thumbnail}
-              alt={member.name.first}
-            />
+            <div className="h-20 w-20 rounded-full overflow-hidden">
+              <img
+                className="avatar"
+                src={member.picture.thumbnail}
+                alt={member.name.first}
+              />
+            </div>
+
             <h2>{member.name.first}</h2>
           </div>
         ))}

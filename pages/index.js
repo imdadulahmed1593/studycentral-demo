@@ -17,7 +17,7 @@ export default function Home({ members }) {
       <main className="bg-[#F4F4F4] h-screen">
         <Banner />
 
-        <section className="flex justify-between max-w-screen-2xl w-full mx-auto px-10 ">
+        <section className="flex flex-col lg:flex-row justify-between max-w-screen-2xl w-full mx-auto px-5 ">
           <BannerInfo members={members} />
           <Program />
         </section>

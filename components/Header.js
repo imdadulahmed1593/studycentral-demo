@@ -5,7 +5,7 @@ import { SearchIcon } from "@heroicons/react/solid";
 const Header = () => {
   return (
     <div className="shadow-md">
-      <header className="max-w-screen-2xl mx-auto flex px-10 py-10 items-top justify-between ">
+      <header className="max-w-screen-2xl mx-auto flex px-5 py-10 items-top justify-between ">
         <div className="space-y-5">
           <div className="flex justify-start">
             <div className="bg-yellow-300 h-8 w-1"></div>
@@ -15,28 +15,28 @@ const Header = () => {
               STUDY<span className="font-bold">CENTRAL</span>
             </h1>
           </div>
-          <nav className="space-x-5">
+          <nav className="space-x-2 md:space-x-5">
             <Link href="/">
-              <a className="text-lg ">Home</a>
+              <a className="text-sm md:text-lg ">Home</a>
             </Link>
             <Link href="/">
-              <a className="text-lg ">Messaging</a>
+              <a className="text-sm md:text-lg ">Messaging</a>
             </Link>
             <Link href="/">
-              <a className="text-lg ">Events</a>
+              <a className="text-sm md:text-lg ">Events</a>
             </Link>
             <Link href="/">
-              <a className="text-lg ">Program</a>
+              <a className="text-sm md:text-lg ">Program</a>
             </Link>
           </nav>
         </div>
 
-        <div className="flex items-center rounded-lg p-5 flex-grow mx-20 border border-gray-300 h-10">
+        <div className="hidden sm:inline-flex items-center rounded-lg p-5 flex-grow mx-20 border border-gray-300 h-10">
           <SearchIcon className="h-6 cursor-pointer mr-5" />
           <input type="text" className="focus:outline-none" />
         </div>
 
-        <div className="flex justify-between items-center">
+        <div className="pl-5 flex justify-between items-center">
           <div className="flex flex-col  items-end">
             <h2 className="text-xl font-bold">Hello Kai!</h2>
             <h2 className="text-xl font-light">
