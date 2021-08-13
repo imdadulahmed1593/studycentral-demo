@@ -39,11 +39,11 @@ const Header = () => {
         <div className="pl-5 flex justify-between items-center">
           <div className="flex flex-col  items-end">
             <h2 className="text-xl font-bold">Hello Kai!</h2>
-            <h2 className="text-xl font-light">
+            <h2 className="text-sm md:text-xl font-light">
               profile <span className="font-bold">|</span> log-out
             </h2>
           </div>
-          <div className="h-14 w-14 ml-5 rounded-full">
+          <div className="h-14 w-14 ml-2 md:ml-5 rounded-full">
             <img
               className="w-full rounded-full object-cover"
               src="https://scontent.fdac14-1.fna.fbcdn.net/v/t1.6435-1/c0.0.240.240a/p240x240/138253763_3720610927985479_9037001452166004464_n.jpg?_nc_cat=108&ccb=1-4&_nc_sid=7206a8&_nc_ohc=RpB5ejXtIyIAX8WzcEQ&_nc_ht=scontent.fdac14-1.fna&oh=45ccdd4cbdd2166954c7431b0a74a04c&oe=6139E95E"

@@ -14,7 +14,7 @@ export default function Home({ members }) {
 
       <Header />
 
-      <main className="bg-[#F4F4F4] h-screen">
+      <main className="bg-[#F4F4F4] py-10 md:py-20 ">
         <Banner />
 
         <section className="flex flex-col lg:flex-row justify-between max-w-screen-2xl w-full mx-auto px-5 ">

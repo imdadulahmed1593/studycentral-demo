@@ -5,7 +5,7 @@ import ProgramManager from "./ProgramManager";
 const BannerInfo = ({ members }) => {
   return (
     <div className="flex-1">
-      <div className="bg-white p-10  space-y-10 ">
+      <div className="bg-white p-5 md:p-10  space-y-10 ">
         <div className="flex flex-col sm:flex-row justify-between items-start">
           <div className="flex items-start ">
             <img
@@ -46,7 +46,7 @@ const BannerInfo = ({ members }) => {
         </div>
       </div>
 
-      <div className="flex justify-between my-5">
+      <div className="flex flex-col md:flex-row justify-between my-5">
         <ProgramManager />
         <Members members={members} />
       </div>

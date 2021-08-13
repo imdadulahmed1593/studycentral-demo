@@ -1,6 +1,6 @@
 const Members = ({ members }) => {
   return (
-    <div className="bg-white flex-grow rounded-lg p-10 space-y-10 overflow-auto">
+    <div className="bg-white flex-grow rounded-lg p-5 md:p-10 mt-5 md:mt-0 space-y-10 overflow-auto">
       <h1 className="text-2xl font-bold">Members</h1>
       <div className="flex flex-wrap items-center">
         {members.results.map((member) => (

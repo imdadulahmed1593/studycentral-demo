@@ -1,6 +1,6 @@
 const ProgramManager = () => {
   return (
-    <div className="bg-white rounded-lg  mr-5 p-10 space-y-10">
+    <div className="bg-white rounded-lg mr-0  md:mr-5 p-5 md:p-10 space-y-10">
       <h1 className="text-2xl text-center font-bold">Program Manager</h1>
       <div className="flex flex-col items-center space-y-3 font-semibold text-xl">
         <div className="h-20 w-20 rounded-full overflow-hidden">
